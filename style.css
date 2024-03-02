@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    top:0;
+    left:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+nav {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Nunito Sans";
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+nav .brand {
+    font-weight: 300;
+    font-size: 30px;
+    margin-left: 100px;
+    transition: 0.2s;
+}
+
+nav .brand:hover{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+    font-size: 32px;
+}
+
+
+nav .Koneksi{
+    margin-right: 100px;
+    color : #fff;
+    padding: 10px 20px;
+    background-color: #160060;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav .Koneksi:hover{
+    background-color: #f2f2f2;
+    color:rgb(8, 2, 120)
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+    line-height: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a:hover {
+    background-color: #f2f2f2;
+    font-size: 18px;
+    color:rgb(8, 2, 120)
+}
+
+nav #burger-menu {
+    display: none;
+}
+
+nav #burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+/* Main */
+main .beranda{
+    position: relative;
+    color: #fff;
+    padding: 10px 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 2px solid rgba(8, 2, 120, 0.419); */
+    background: rgb(2,0,36);
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(11,9,121,1) 42%, rgba(0,148,254,1) 70%);
+}
+
+main .beranda div{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: left;
+    margin-left: 50px;
+}
+
+main .beranda div div{
+    font-size: 20px;
+    font-family: "Nunito Sans";
+}
+
+main .beranda div .namaAtas, main .beranda div .namaBawah{
+    font-size: 60px;
+    font-weight: 300;
+    font-family: "Nunito Sans";
+    margin-bottom: 10px;
+    letter-spacing: 15px;
+    
+}
+
+main .beranda div .deskripsi{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    font-family: "Nunito Sans", sans-serif;
+    text-shadow: 2px 2px 4px #00000080;
+}
+
+main .beranda img {
+    margin-right: 120px;
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+    /* filter: drop-shadow(160px 80px 10px #00000067);  */
+    border-bottom: 10px solid rgba(8, 2, 120, 0.419);  
+}
+
+
+main .wave{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    /* transform: rotateX(180deg); */
+    /* fill: #fff; */
+    /* height: 100px; */
+    width: 100%;
+}
+
+/* About */
+main .about .aboutWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0eeff;
+    margin-bottom: 0;
+    font-family: "Nunito Sans";
+    padding: 10px 20px;
+
+}
+
+main .about .aboutWrapper h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Nunito Sans";
+    margin-bottom: 20px;
+    text-align: center;
+    color: #160060;
+
+}
+
+
+main .about .aboutWrapper .aboutArticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    gap: 20px;
+}
+
+
+main .about .aboutWrapper .aboutArticle p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    color: #160060;
+    max-width: 400px;
+}
+
+main .about .aboutWrapper .aboutArticle .cardWrapper .card{
+    border: 1px solid #160060;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    padding: 10px;
+}
+
+main .about .aboutWrapper .aboutArticle .cardWrapper .card .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 1px solid #160060;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+main .about .aboutWrapper .aboutArticle .cardWrapper .card p{
+    margin: 0;
+    padding: 0;
+}
+/* Skilss */
+main .skills {
+    padding: 40px 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #f0eeff;
+    /* width: 100%; */
+    font-family: "Nunito Sans";
+    overflow: hidden;
+}
+
+main .skills .textAtas{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    /* padding-left: 100px; */
+    text-align: center;
+    color: #160060;
+    /* position: absolute; */
+    
+    
+}
+
+main .skills .textAtas h1{
+    margin-bottom: 0;
+}
+
+main .skills .textAtas p {
+    margin-top: 0;
+}
+
+main .skills .cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 20px;
+    width: 100%;
+}
+
+main .skills .cardContainer .card{
+    border: 1px solid #160060;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+main .skills .cardContainer .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .1rem #fff,
+    0 0 1rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 1.8rem #bc13fe,
+    inset 0 0 0.3rem #bc13fe; 
+}
+
+main .skills .cardContainer .card .imgContainer {
+    border-radius: 10px 10px 0 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+main .skills .cardContainer .card .text{
+    padding: 10px;
+    width:250px;
+    /* padding-right: 100px; */
+    /* text-align: center; */
+}
+
+main .skills .cardContainer .card .text h2{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+main .skills .cardContainer .card .text p{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #160060;
+}
+
+/* Footer */
+footer {
+    background-color: #f0eeff;
+    padding: 20px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    color: #fff;
+    background-color:rgb(8, 2, 120);
+}
+
+
+footer .footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    gap: 400px;
+}
+
+footer .footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 20px; */
+}
+
+footer .footer-left p{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+footer .footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+footer .footer-right .social-media{
+    display: flex;
+    gap:30px;
+}
+
+footer .footer-right .social-media a i{
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+    
+}
+footer .footer-right .social-media a i:hover{
+    font-size: 32px;
+    color: rgb(87, 62, 255);
+    
+}
+
+footer .footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    nav .menu {
+        display: none;
+        transition: 0.3s;
+    }
+
+    nav .brand {
+        margin-left: 10px;
+    }
+
+    nav #burger-menu {
+        margin-right: 20px;
+        display: block;
+    }
+
+    nav .Koneksi {
+        display: none;
+    }
+
+    nav .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left:0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        z-index: 1000;
+        padding: 20px 0;
+    }
+
+    nav .menu.active li {
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    nav .menu.active li a {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        width: 100%;
+    }
+
+    nav .menu.active li a:hover {
+        background-color: #f2f2f2;
+        font-size: 22px;
+        color:rgb(8, 2, 120)
+    }
+
+    nav #burger-menu .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 5px 0;
+    }
+
+    main .beranda {
+        padding: 10px 20px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .wave{
+        bottom: -10px;
+    }
+
+
+    main .beranda div {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    main .beranda div div {
+        font-size: 20px;
+    }
+
+    main .beranda div .namaAtas, main .beranda div .namaBawah {
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 15px;
+    }
+
+    main .beranda div .deskripsi {
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 10px;
+        letter-spacing: 4px;
+    }
+
+    main .beranda img {
+        margin-right: 0;
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        border-bottom: 10px solid rgba(8, 2, 120, 0.419);
+    }
+
+    main .about .aboutWrapper {
+        padding: 10px 20px;
+    }
+
+    main .about .aboutWrapper .aboutArticle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    main .about .aboutWrapper .aboutArticle .cardWrapper .card {
+        margin: 10px 0;
+    }
+
+    main .skills {
+        padding: 40px 20px;
+    }
+
+    main .skills .textAtas {
+        padding: 10px 20px;
+    }
+
+    main .skills .cardContainer {
+        padding: 20px 0;
+        overflow-x: scroll;
+    }
+
+   
+
+    footer .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-right .social-media {
+        display: flex;
+        gap: 20px;
+    }
+
+}
