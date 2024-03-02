@@ -6,9 +6,10 @@
 **My Portofolio** ini adalah projek akhir dari kelas *Belajar Dasar Pemrograman Web* dari **Dicoding**. Ini adalah salah satu kelas yang disediakan oleh **Bangkit** untuk **Cloud Computing**  💻. 
 
     
-## 🥇Rating
-⭐⭐⭐⭐⭐ (5)
-
+## 🥇Rating from Dicoding
+<div>
+    <img src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/submission-rating-badge/rating-default-5.png"width="96" height="96" alt="5 Star Dicoding"  /> 
+</div>
 
 ## Tech Stack
 
